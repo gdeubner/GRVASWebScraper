@@ -4,6 +4,13 @@ using CsvHelper;
 using System.Collections.Generic;
 using System.Linq;
 
+/*
+Instructions for the future you who is undoubtably too stupid to remeber how to run this
+1. dotnet build
+2. dotnet run
+
+*/
+
 namespace GRVASWebScraper
 {
     class Program
@@ -18,6 +25,24 @@ namespace GRVASWebScraper
             PrintRWJClasses(rwjUrl, month);
             PrintMountainsideClasses(mountainsideUrl, month);
             PrintEmailClosing();
+        }
+
+        public static void setFileStreamWriter(){
+            FileStream ostrm;
+    StreamWriter writer;
+    TextWriter oldOut = Console.Out;
+    try
+    {
+        ostrm = new FileStream ("./Redirect.txt", FileMode.OpenOrCreate, FileAccess.Write);
+        writer = new StreamWriter (ostrm);
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine ("Cannot open Redirect.txt for writing");
+        Console.WriteLine (e.Message);
+        return;
+    }
+    Console.SetOut (writer);
         }
 
         public static void PrintEmailIntro(string month)

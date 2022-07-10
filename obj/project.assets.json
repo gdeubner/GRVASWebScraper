@@ -103,25 +103,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Graham\\.nuget\\packages\\": {}
+    "C:\\Users\\gdeubner\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Graham\\Documents\\Development\\GRVASWebScraper\\GRVASWebScraper.csproj",
+      "projectUniqueName": "C:\\development\\GRVASWebScraper\\GRVASWebScraper.csproj",
       "projectName": "GRVASWebScraper",
-      "projectPath": "C:\\Users\\Graham\\Documents\\Development\\GRVASWebScraper\\GRVASWebScraper.csproj",
-      "packagesPath": "C:\\Users\\Graham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Graham\\Documents\\Development\\GRVASWebScraper\\obj\\",
+      "projectPath": "C:\\development\\GRVASWebScraper\\GRVASWebScraper.csproj",
+      "packagesPath": "C:\\Users\\gdeubner\\.nuget\\packages\\",
+      "outputPath": "C:\\development\\GRVASWebScraper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Graham\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\gdeubner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://artifactory.trimble.tools/artifactory/api/nuget/trimblemaps-libs-nuget": {}
       },
       "frameworks": {
         "net5.0": {
@@ -163,7 +166,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
